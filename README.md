@@ -9,10 +9,18 @@
 |git remote add origin https://github.com/sergx/test_git|Связать локальный репозиторий с удаленным|
 |*git remote set-url origin https://github.com/sergx/nodejs-test*|*Если не то название ввел, то этой командой можно переназначить*|
 |git pull origin master|Загрузить файлы репозитория на локальный компьютер|
-|*После внесения изменения в файлы:*|
+|**После внесения изменения в файлы:**|
 |git add .|Добавить все изменения для коммита|
 |git commit -m 'init'|Инициализировать коммит|
 |git push --set-upstream origin master|Загрузить коммит и указать ветку (последющие пуши можно будет совершать через *git push*)|
+
+#### Загрузить на локальную машину актуальную версию, ПЕРЕЗАПИСАВ то, что есть локально
+[https://stackoverflow.com/a/8888015/6928687](https://stackoverflow.com/a/8888015/6928687)
+
+|Команда|Описание|
+|---|---|
+|git fetch --all|Просто загружает самую последнюю версию файлов, без попыток мерджить и пр.|
+|git reset --hard origin/master|Заново устанавливает связь с бранчем|
 
 ### Подгрузить изменения к только что сделанному коммиту
 [Git Basics: Adding more changes to your last commit](https://medium.com/@igor_marques/git-basics-adding-more-changes-to-your-last-commit-1629344cb9a8)
