@@ -62,3 +62,14 @@
 |`git push`||
 |**Если коммит уже запушен:**|
 |`git push -f`||
+
+
+## Деплой (как я это понимаю) на хостинг
+
+|Команда|Описание|
+|---|---|
+|`git init`|Инициализировать репозиторий в папке|
+|`git remote add origin https://USERNAME:PASSWORD@github.com/sergx/test_git.git`|Связать локальный репозиторий с удаленным — и НЕ вводить пароль при будущих пушах|
+|`git remote add origin https://github.com/sergx/test_git`|Связать локальный репозиторий с удаленным — и ВВОДИТЬ пароль при будущих пушах|
+|`git branch --set-upstream-to=origin/master`|Указать ветку|
+|`git push`|Загрузить файлы|
